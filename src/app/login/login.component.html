@@ -1,0 +1,32 @@
+<div style="margin-top: 80px;">
+    <div class="main d-flex justify-content-center align-items-center">
+        <div class="shadow row mt-2 mb-4">
+            <div class="col-lg-6">
+                <img width="100%" src="https://i.pinimg.com/originals/6b/1b/22/6b1b22573f9f3d4bba11a9fa5cb45652.png"
+                    alt="login">
+            </div>
+            <div class="col-lg-6 bg-primary">
+                <form>
+                    <h2 class="text-center mb-4 mt-5 py-1">Login form</h2>
+                    <div class="form-floating mb-3">
+                        <input type="email" class="form-control" name="email" id="floatingInput"
+                            placeholder="name@example.com" required>
+                        <label for="floatingInput">Email address</label>
+                        <!-- invalid email -->
+                    </div>
+
+                    <div class="form-floating mb-5">
+                        <input type="password" class="form-control" name="paasword" id="floatingPassword"
+                            placeholder="Password" required pattern="[a-zA-Z0-9]+" minlength="3">
+                        <label for="floatingPassword">Password</label>
+                        <!-- invalid password -->
+                    </div>
+                    <div class="d-grid">
+                        <input class="btn btn-success" type="submit" value="Login">
+                    </div>
+                    <p class="text-light mt-1">New User? Click Here to <a class="text-light" routerLink="/user/register">Register</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
